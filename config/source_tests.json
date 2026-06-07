@@ -1,0 +1,37 @@
+{
+  "rss_sources": [
+    {
+      "name": "36氪",
+      "url": "https://36kr.com/feed",
+      "purpose": "创业/融资/科技公司线索",
+      "source_type": "official_rss"
+    },
+    {
+      "name": "华尔街见闻",
+      "url": "https://rss.ovh/wallstreetcn/news",
+      "purpose": "宏观/行业/资本市场风险",
+      "source_type": "rsshub_public"
+    },
+    {
+      "name": "格隆汇快讯",
+      "url": "https://rss.ovh/gelonghui/live",
+      "purpose": "市场快讯，临时代替财联社",
+      "source_type": "rsshub_public"
+    }
+  ],
+  "cninfo": {
+    "name": "巨潮资讯",
+    "url": "http://www.cninfo.com.cn/new/hisAnnouncement/query",
+    "purpose": "上市公司硬风险公告",
+    "keywords": [
+      "风险提示",
+      "问询函",
+      "监管函",
+      "立案调查",
+      "债务逾期",
+      "股权冻结",
+      "退市风险",
+      "异常波动"
+    ]
+  }
+}
