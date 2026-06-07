@@ -50,3 +50,19 @@ config/feishu_risk.json
 ```text
 .env.example
 ```
+
+## 导入飞书
+
+先 dry-run：
+
+```powershell
+& 'E:\DARA-tools\risk-source-tester\.venv\Scripts\python.exe' scripts\feishu_import.py data\source_tests\risk_materials_local_20260607_174123.xlsx --dry-run
+```
+
+确认数量后导入：
+
+```powershell
+& 'E:\DARA-tools\risk-source-tester\.venv\Scripts\python.exe' scripts\feishu_import.py data\source_tests\risk_materials_local_20260607_174123.xlsx
+```
+
+导入脚本按 `去重键` 跳过已存在记录。
