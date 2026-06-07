@@ -72,3 +72,18 @@ docs/feishu-tools.md
 ```
 
 导入脚本按 `去重键` 跳过已存在记录。
+
+## Topic generation
+
+Generate first-pass topic drafts and write them back to Feishu:
+
+```powershell
+& 'E:\DARA-tools\risk-source-tester\.venv\Scripts\python.exe' scripts\generate_topics.py --evidence-level A --dry-run
+& 'E:\DARA-tools\risk-source-tester\.venv\Scripts\python.exe' scripts\generate_topics.py --evidence-level A
+```
+
+Details:
+
+```text
+docs/topic-generation.md
+```
