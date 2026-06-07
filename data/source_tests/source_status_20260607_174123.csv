@@ -1,0 +1,5 @@
+﻿来源,测试地址,接入方式,返回条数,是否可用,说明
+36氪,https://36kr.com/feed,official_rss,20,是,创业/融资/科技公司线索
+华尔街见闻,https://rss.ovh/wallstreetcn/news,rsshub_public,20,是,宏观/行业/资本市场风险
+格隆汇快讯,https://rss.ovh/gelonghui/live,rsshub_public,15,是,市场快讯，临时代替财联社
+巨潮资讯,http://www.cninfo.com.cn/new/hisAnnouncement/query,cninfo_api,40,是,上市公司硬风险公告
