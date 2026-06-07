@@ -36,3 +36,17 @@ data/source_tests/
 ```text
 docs/local-table-fields.md
 ```
+
+## 飞书风险库
+
+已创建专用飞书多维表：
+
+```text
+config/feishu_risk.json
+```
+
+本仓库只保存风险库的 Base token 和 Table ID，不保存 `FEISHU_APP_SECRET`。本地凭证请放在环境变量或 `.env` 中，参考：
+
+```text
+.env.example
+```
