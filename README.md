@@ -51,6 +51,12 @@ config/feishu_risk.json
 .env.example
 ```
 
+飞书 CLI / MCP 工具安装和使用说明见：
+
+```text
+docs/feishu-tools.md
+```
+
 ## 导入飞书
 
 先 dry-run：
