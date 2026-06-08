@@ -112,13 +112,13 @@ def latest_local_table() -> Path:
     return candidates[-1]
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Import local risk materials into Feishu Bitable.")
     parser.add_argument("path", nargs="?", type=Path, default=None)
     parser.add_argument("--sheet-name", default="风险素材表")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--dry-run", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     path = args.path or latest_local_table()
     df = read_local_table(path, sheet_name=args.sheet_name)

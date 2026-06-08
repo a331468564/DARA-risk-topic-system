@@ -87,3 +87,17 @@ Details:
 ```text
 docs/topic-generation.md
 ```
+
+## Risk CLI
+
+Unified commands for manual add, import, topic generation, manual verification, and daily reports:
+
+```powershell
+& 'E:\DARA-tools\risk-source-tester\.venv\Scripts\python.exe' scripts\risk.py --help
+```
+
+Details:
+
+```text
+docs/risk-cli.md
+```

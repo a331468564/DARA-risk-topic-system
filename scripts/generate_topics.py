@@ -109,13 +109,13 @@ def load_feishu_config(path: Path = CONFIG_PATH) -> dict[str, str]:
     }
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Generate draft topic fields and write them back to Feishu Bitable.")
     parser.add_argument("--limit", type=int, help="Only process the first N eligible records.")
     parser.add_argument("--evidence-level", help="Only process records with this evidence level, for example A.")
     parser.add_argument("--force", action="store_true", help="Overwrite existing generated topic fields.")
     parser.add_argument("--dry-run", action="store_true", help="Preview updates without writing to Feishu.")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     app_id = os.environ.get("FEISHU_APP_ID")
     app_secret = os.environ.get("FEISHU_APP_SECRET")
